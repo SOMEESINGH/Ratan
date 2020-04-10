@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Intractive calendar
+        </title>
+        <!--include style.css-->
+        <link rel="stylesheet" href="css/lata.css">
+            </head>
+    <body onload="RenderDate()">
+        <div class="wrapper">
+            <div class="calendar">
+              <div class="month">
+                  <div class="prev" onclick="moveDate('prev')">
+                      <span>&#10094</span>
+                  </div>
+                  <div>
+                      <h2 id="month">April</h2>
+                     <p id="date_str"></p>
+                  </div>
+                  <div class="next"onclick="moveDate('next')">
+                      <span>&#10095</span>
+                  </div>
+             </div>
+                <div class="weekends">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+        </div>
+        <div class="days">
+        </div>
+     </div>
+    </div> 
+        <!--include calendar.js-->
+     <script src="js/lata.js"></script>
+    </body>
+</html>
